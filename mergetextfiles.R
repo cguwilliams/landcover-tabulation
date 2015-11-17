@@ -3,7 +3,7 @@
 # This script could be pasted to the end of 'covertabulation.R' if you're careful
 
 # Filepath where cover type files are
-fp <- '~/source/of/individual/text/files'
+fp <- '/source/of/individual/text/files'
 # Collect filepaths of all files in directory 'fp'
 filenames <- Sys.glob(file.path(fp,'*.csv'))
 
@@ -26,4 +26,4 @@ df[4:length(df)] <- df.round
 
 # Write final datafile. IN the county data example, the file is 14 or so columnes by approximately 3000 lines long
 # One row per cover type (plus columns to identify states/counties) and one row per county
-write.csv(df,'~/Documents/berman/allstate_cover_06.csv')
+write.csv(df,'~/path/where/you/want/to/save/data/data.csv')
