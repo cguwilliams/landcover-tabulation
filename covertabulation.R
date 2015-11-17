@@ -140,7 +140,7 @@ for (i in 1:length(state_fips)){
   # will later be joined to create one long dataset
   
   # Create file name/destination
-  filename <- paste("~/path/where/you/want/to/save/data/",this_fip,".csv",sep="")
+  filename <- paste("/path/where/you/want/to/save/data/",this_fip,".csv",sep="")
   
   # Keep track of process
   print(paste("writing datafile for state fip",this_fip))
